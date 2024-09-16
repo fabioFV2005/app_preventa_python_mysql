@@ -1,30 +1,28 @@
 :root {
   /* Colores principales */
-  --color-primary: #e74c3c;        /* Rojo para el color principal */
-  --color-primary-dark: #c0392b;   /* Rojo oscuro para hover */
-  --color-secondary: #3498db;      /* Azul claro para contraste */
-  --color-accent: #f1c40f;         /* Amarillo dorado para resaltar detalles */
-
+  --color-primary: #e74c3c;       
+  --color-primary-dark: #c0392b;   
+  --color-secondary: #3498db;     
+  --color-accent: #f1c40f;        
   /* Colores de fondo */
-  --color-background: #f2f3f4;     /* Gris muy claro para el fondo principal */
-  --color-surface: #ffffff;        /* Blanco para superficies de tarjetas/formularios */
+  --color-background: #f2f3f4;    
+  --color-surface: #ffffff;        
 
   /* Colores de texto */
-  --color-text-primary: #2c3e50;   /* Azul muy oscuro para texto principal */
-  --color-text-secondary: #7f8c8d; /* Gris para texto secundario */
+  --color-text-primary: #2c3e50;   
+  --color-text-secondary: #7f8c8d; 
 
   /* Colores de estado */
-  --color-error: #e74c3c;          /* Rojo para errores */
-  --color-warning: #f39c12;        /* Naranja para advertencias */
-  --color-info: #3498db;           /* Azul claro para información */
+  --color-error: #e74c3c;         
+  --color-warning: #f39c12;        
+  --color-info: #3498db;          
 
   /* Colores de borde y separación */
-  --color-border: #bdc3c7;         /* Gris claro para bordes */
-  --color-divider: #ecf0f1;        /* Gris muy claro para divisores */
+  --color-border: #bdc3c7;         
+  --color-divider: #ecf0f1;        
 }
 
 
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -68,7 +66,7 @@ body {
     width: 100%;
     max-width: 400px;
     display: flex;
-    flex-direction: column; /* Asegúrate de que los elementos dentro del formulario estén en columna */
+    flex-direction: column; 
     justify-content: center;
     margin-top: -15rem;
     margin-right: auto;
@@ -131,7 +129,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Ajustar el contenedor para pantallas pequeñas */
     .contenedor__formulario {
         width: 90%;
         max-width: 100%;
@@ -153,7 +150,6 @@ body {
 
     }
 
-    /* Ajuste de tipografía y espaciado en pantallas pequeñas */
     .titulo-formulario {
         font-size: 1.5rem;
     }
