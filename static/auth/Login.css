@@ -1,0 +1,176 @@
+:root {
+  /* Colores principales */
+  --color-primary: #e74c3c;        /* Rojo para el color principal */
+  --color-primary-dark: #c0392b;   /* Rojo oscuro para hover */
+  --color-secondary: #3498db;      /* Azul claro para contraste */
+  --color-accent: #f1c40f;         /* Amarillo dorado para resaltar detalles */
+
+  /* Colores de fondo */
+  --color-background: #f2f3f4;     /* Gris muy claro para el fondo principal */
+  --color-surface: #ffffff;        /* Blanco para superficies de tarjetas/formularios */
+
+  /* Colores de texto */
+  --color-text-primary: #2c3e50;   /* Azul muy oscuro para texto principal */
+  --color-text-secondary: #7f8c8d; /* Gris para texto secundario */
+
+  /* Colores de estado */
+  --color-error: #e74c3c;          /* Rojo para errores */
+  --color-warning: #f39c12;        /* Naranja para advertencias */
+  --color-info: #3498db;           /* Azul claro para información */
+
+  /* Colores de borde y separación */
+  --color-border: #bdc3c7;         /* Gris claro para bordes */
+  --color-divider: #ecf0f1;        /* Gris muy claro para divisores */
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-background);
+    font-family: Arial, sans-serif;
+      overflow: hidden;
+
+}
+
+.contenedor__wave {
+  width: 100%;
+  overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.contenedor__wave__bottom{
+     width: 100%;
+  overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.img__wave {
+    width: 100%;
+
+}
+.contenedor__formulario {
+    background-color:  #a93226;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos dentro del formulario estén en columna */
+    justify-content: center;
+    margin-top: -15rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -21rem;
+    /*margin: 1rem auto;*/
+    position: relative;
+     z-index: 2;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-formulario {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-surface);
+}
+
+.formulario__label {
+    margin-bottom: 0.5rem;
+    color: var(--color-surface);
+}
+
+.formulario__input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.formulario__submit {
+    padding: 0.5rem;
+    background-color: var(--color-text-secondary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario__submit:hover {
+    background-color: var(--color-text-primary);
+   transform: scale(1.1);
+
+}
+
+.crear__cuenta {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--color-surface);
+    text-decoration: none;
+}
+
+.crear__cuenta:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    /* Ajustar el contenedor para pantallas pequeñas */
+    .contenedor__formulario {
+        width: 90%;
+        max-width: 100%;
+        padding: 1.5rem;
+        margin-top: -5rem;
+        margin-bottom: -15rem;
+    }
+
+    .contenedor__wave, .contenedor__wave__bottom {
+        height: auto;
+        overflow: hidden;
+
+    }
+    .contenedor__wave__bottom{
+        margin-top: 12rem;
+    }
+    .img__wave {
+    width: 100%;
+
+    }
+
+    /* Ajuste de tipografía y espaciado en pantallas pequeñas */
+    .titulo-formulario {
+        font-size: 1.5rem;
+    }
+
+    .formulario__label, .formulario__input, .formulario__submit {
+        font-size: 1rem;
+    }
+
+    .formulario__input {
+        padding: 0.4rem;
+    }
+
+    .formulario__submit {
+        padding: 0.4rem;
+    }
+
+    .crear__cuenta {
+        font-size: 0.9rem;
+    }
+}
