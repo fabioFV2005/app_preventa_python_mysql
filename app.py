@@ -4,8 +4,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Habilita el modo de depuración automáticamente
-
+    app.run(debug=True) 
 @app.route('/index')
 def hello_world():
     name = "fabito"
